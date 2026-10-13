@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 测试与缓存
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 本地数据库（勿提交）
+*.db
+*.db-*
+*.sqlite*
+cars.db
+
+# 环境与密钥
+.env
