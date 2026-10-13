@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars CRUD</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Cars CRUD</h1>
+
+    <form id="car-form" class="form">
+      <input type="hidden" id="car-id" value="">
+      <input type="text" id="make" placeholder="Make" required>
+      <input type="text" id="model" placeholder="Model" required>
+      <input type="number" id="year" placeholder="Year" min="1886" max="2100">
+      <input type="text" id="color" placeholder="Color">
+      <button type="submit" id="submit-btn">Add car</button>
+      <button type="button" id="reset-btn" hidden>Cancel edit</button>
+    </form>
+
+    <p id="message" class="message" hidden></p>
+
+    <table class="cars">
+      <thead>
+        <tr><th>ID</th><th>Make</th><th>Model</th><th>Year</th><th>Color</th><th>Actions</th></tr>
+      </thead>
+      <tbody id="cars-tbody"></tbody>
+    </table>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
